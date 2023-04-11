@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import axios from './axios';
 import './App.css';
 import Team from './components/Team';
@@ -12,11 +12,14 @@ const initialTeamValues = {
 }
 
 function App() {
+  const [teams, setTeams] = useState([]);
   return (
     <div className="container">
       <h1>My Team</h1>
       <Form />
-      <Team />
+      {teams.map(team => {
+        return (<Team key={team.id} details={team} />)
+      })}
 
     </div>
   );
