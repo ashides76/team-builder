@@ -1,4 +1,4 @@
-import { v4 as uuid } from 'uuid'
+import { v4 as uuid } from 'uuid';
 
 // 👉 the shape of the list of friends from API
 const initialTeamsList = [
@@ -8,7 +8,7 @@ const initialTeamsList = [
     email: 'adam@adam.com',
     role: 'Software Engineer',
   },
-]
+];
 
 // 👉 simulating axios for [GET] and [POST]
 export default {
